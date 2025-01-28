@@ -1,0 +1,134 @@
+.page-head{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.navbar-collapse{
+    padding-left: 60px;
+}
+.nav-item{
+    padding-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-icon{
+    padding-right: 30px;
+}
+.container-home{
+    background-color: #9DA6D3;
+}
+.home-image{
+    border-radius: 50px;
+    width: 300px;
+    height: 450px;
+}
+.home-texts{
+    font-family: 'Arial Narrow ', sans-serif;   
+    font-size: 20px;
+    color: white;  
+}
+.para{
+    font-size: 40px;
+}
+.form-container p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.form-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+.form-container button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.search-container {
+    margin-bottom: 20px;
+}
+.save-button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.save-button:hover {
+    background-color: #45a049;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    padding: 20px;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;      
+}
+.subpara{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-menu{
+    color: rgb(47, 38, 108);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.destination{
+    border-radius: 50px;
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.customer-section{
+    margin-top: 60px;
+    background-color: #E0D8D8;
+}
+.carousel-img{
+    border-radius: 60px;
+    margin-left: 45%;       
+}
+.carousel-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+.card-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+.button{
+    background-color: rgb(77, 77, 155);
+    margin-bottom: 10px;
+}
+.banner-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #222B4F;
+    color: white;
+}
+.contact-us{
+    margin-top: 20px;
+}
+
