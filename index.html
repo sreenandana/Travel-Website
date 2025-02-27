@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Style.css">
@@ -183,48 +184,80 @@
 <div class="container" id="services">
   <div class="row p-4">
       <h3 class="heading">Popular Destination</h3><hr>     
-      <div class="col-lg-4">
-          <div class="destination">
-            <img class="img-fluid destination" src="Images/hawaai.jpg"  alt="">
+      <div class="swiper destination-Swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide destination">
+            <img class="destination" src="Images/hawaai.jpg" alt="" class="img-fluid">
             <div class="text-overlay">
-              <i class="fa-solid fa-location-dot"></i> Molokini Crater </h2>
+              <h5> Molokini Crater </h5>
               <div class="price1">Maui, Hawaii</div>   
-            </div>              
+            </div>  
           </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="destination">
-          <img class="img-fluid destination" src="Images/london.jpg"  alt="">  
-            <p class="card-text1"><b> <i class="fa-solid fa-location-dot"></i> Elizabeth Tower <br>London</b></p>
+          <div class="swiper-slide destination">
+            <img class="destination" src="Images/london.jpg" alt="" class="img-fluid">
+            <div class="text-overlay">
+              <h5>Elizabeth Tower </h5>
+              <div class="price1">London</div>   
+            </div>  
+          </div>
+          <div class="swiper-slide destination">
+            <img class="destination" src="Images/New Zealand.jpg" alt="" class="img-fluid">
+            <div class="text-overlay">
+              <h5> Auckland Viaduct Harbour </h5>
+              <div class="price1">New Zealand</div>   
+            </div>  
+          </div>
+          <div class="swiper-slide destination">
+            <img class="destination" src="Images/service.jpg" alt="" class="img-fluid">
+            <div class="text-overlay">
+              <h5> Manhattan Bridge </h5>
+              <div class="price1">New York</div>   
+            </div>  
+          </div>
+          <div class="swiper-slide destination">
+            <img class="destination" src="Images/malaysia.webp" alt="" class="img-fluid">
+            <div class="text-overlay">
+              <h5>Batu Caves, Kuala Lumpur </h5>
+              <div class="price1">Malaysia</div>   
+            </div>  
+          </div> 
+          <div class="swiper-slide destination">
+            <img class="destination" src="Images/Switzerland.png" alt="" class="img-fluid">
+            <div class="text-overlay">
+              <h5> Jungfraujoch </h5>
+              <div class="price1">Switzerland</div>   
+            </div>  
+          </div>
+          <div class="swiper-slide destination">
+            <img class="destination" src="Images/italy.jpg" alt="" class="img-fluid">
+            <div class="text-overlay">
+              <h5> Pragser Wildsea </h5>
+              <div class="price1">Italy</div>   
+            </div>  
+          </div>    
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="col-lg-4">
-        <div class="destination">
-          <img class="img-fluid destination" src="Images/New Zealand.jpg"  alt=""> 
-            <p class="card-text1"><b> <i class="fa-solid fa-location-dot"></i> Auckland Viaduct Harbour <br>New Zealand</b></p>
-        </div>
-      </div>    
-  </div>
+    </div>
 </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
- 
-<script>
-var swiper = new Swiper(".event-Swiper", {
-loop:true,
-autoplay: {
-delay: 5000,
-disableOnInteraction: false,
-},
-slidesPerView: 3,
-spaceBetween: 30,
-freeMode: true,
-pagination: {
-el: ".swiper-pagination",
-clickable: true,
-},
-});
-</script>
+     <script>
+      var swiper = new Swiper(".destination-Swiper", {
+        loop:true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 
 <!-- ------------------------------Destinations end--------------------------------- -->  
  <!-- ------------------------------Testimonial start--------------------------------- -->
@@ -250,7 +283,7 @@ clickable: true,
               </div>
             </div>
             <div class="col-lg-4" style="width: 8rem; height: 6rem;">
-              <img src="images/quote lady.jpg" alt="" class="test-img rounded-circle img-fluid" height="20px">
+              <img src="Images/quote lady.jpg" alt="" class="test-img rounded-circle img-fluid" height="20px">
             </div>
           </div>
         </div>
@@ -269,7 +302,7 @@ clickable: true,
                 </div>
               </div>
               <div class="col-lg-4" style="width: 8rem; height: 6rem;">
-                <img src="images/quote 2.jpg" alt="" class="test-img rounded-circle img-fluid" height="20px">
+                <img src="Images/quote 2.jpg" alt="" class="test-img rounded-circle img-fluid" height="20px">
               </div>
             </div>
           </div>
@@ -289,18 +322,16 @@ clickable: true,
                 </div>
               </div>
               <div class="col-lg-4" style="width: 8rem; height: 6rem;">
-                <img src="images/quote_3.jpg" alt="" class="test-img rounded-circle img-fluid" height="20px">
+                <img src="Images/quote_3.jpg" alt="" class="test-img rounded-circle img-fluid" height="20px">
               </div>
             </div>
           </div>
-
-          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
                   <script>
-                    var swiper = new Swiper(".mySwiper", {
+                    var swiper = new Swiper(".mySwiper", 
+                    {
                       loop: true, 
                       autoplay: {
-                      delay: 2000,
+                      delay: 2500,
                       disableOnInteraction: false, 
                   },
                       pagination: {
