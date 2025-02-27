@@ -77,6 +77,7 @@
 .save-button:hover {
     background-color: #45a049;
 }
+/*services*/
 .heading{
     display: flex;
     justify-content: center;
@@ -88,7 +89,15 @@
     justify-content: center;
     text-align: center;
 }
-.footer-menu{
+.contact-card1{
+    padding: 20px;
+    background-color: rgb(243, 242, 242);
+    border-radius: 10px;
+    box-sizing: 1rem;
+    margin-bottom: 10px;
+  }
+  .footer-menu{
+    margin-top: 20px;
     color: rgb(47, 38, 108);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
